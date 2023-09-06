@@ -1,0 +1,51 @@
+.Table__itemCount {
+    /* margin-top: 10px; */
+    font-size: 14px;
+  }
+  
+  .Table__pagination {
+    display: flex;
+    justify-content: flex-end;
+    /*padding: 20px 10px;*/
+  }
+  
+  .Table__pageButton {
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .Table__pageButton:disabled {
+    cursor: not-allowed;
+    color: gray;
+  }
+  
+  .Table__pageButton--active {
+    color: #45b3e3;
+    font-weight: bold;
+  }
+  
+  .ReactTable .rt-thead.-header {
+      box-shadow: none;
+      background: #F5F5FD;
+  }
+  
+  .ReactTable .rt-th, .ReactTable .rt-td {
+    flex: 1 0 0;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /*text-transform: capitalize;*/
+    overflow: hidden;
+    transition: .3s ease;
+    font-size: 12px;
+    transition-property: width,min-width,padding,opacity;
+}
+
+.ReactTable .rt-thead .rt-resizable-header-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+}
